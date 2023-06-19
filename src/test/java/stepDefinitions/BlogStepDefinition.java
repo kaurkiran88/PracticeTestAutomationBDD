@@ -1,6 +1,6 @@
 package stepDefinitions;
 
-<<<<<<< HEAD
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
@@ -33,14 +33,5 @@ public class BlogStepDefinition {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
 	}
-
-
-
-
-
-
-=======
-public class BlogStepDefinition {
->>>>>>> 9dacba0f79e906fe8d357582ea2dbcd9289f5303
 
 }

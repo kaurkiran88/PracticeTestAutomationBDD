@@ -53,3 +53,4 @@ import org.openqa.selenium.safari.SafariDriver;
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			
 		}
+	}
