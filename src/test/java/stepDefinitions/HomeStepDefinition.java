@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+<<<<<<< HEAD
 import org.junit.Assert;
 import org.openqa.selenium.By;
 
@@ -64,5 +65,8 @@ public class HomeStepDefinition extends TestBase{
 
 
 
+=======
+public class HomeStepDefinition {
+>>>>>>> 9dacba0f79e906fe8d357582ea2dbcd9289f5303
 
 }
