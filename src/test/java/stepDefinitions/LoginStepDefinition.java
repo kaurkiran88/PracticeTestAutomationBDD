@@ -2,6 +2,8 @@ package stepDefinitions;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import base.TestBase;
 import io.cucumber.java.After;
@@ -10,16 +12,16 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
 public class LoginStepDefinition extends TestBase{
+	WebDriver driver;
 	
 	@Before("@LoginTest")
-	public void setUp() {
-		TestBase.initialization();
+	public void setUp(){
+		System.setProperty("webdriver.gecko.driver", "/Users/kataria99/Desktop/QA/SeleniumJars/geckodriver");
+		driver = new FirefoxDriver(); 
 	}
-	
 	
 	@Given("user is on test login page of Practice Test Automation Website")
 	public void user_is_on_test_login_page_of_Practice_Test_aAutomation_Website()  {
-		
 		driver.get(prop.getProperty("loginUrl"));
 		String title = driver.getTitle();
 	    Assert.assertEquals(title, "Test Login | Practice Test Automation");

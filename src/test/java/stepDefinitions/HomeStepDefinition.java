@@ -2,6 +2,8 @@ package stepDefinitions;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import base.TestBase;
 import io.cucumber.java.After;
@@ -10,10 +12,13 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
 public class HomeStepDefinition extends TestBase{
-
+	
+	WebDriver driver;
+	
 	@Before("@HomeTest")
-	public void setUp() {
-		TestBase.initialization();
+	public void setUp(){
+		System.setProperty("webdriver.gecko.driver", "/Users/kataria99/Desktop/QA/SeleniumJars/geckodriver");
+		driver = new FirefoxDriver(); 
 	}
 
 	@Given("user is on home page of Practice Test Automation Website")
